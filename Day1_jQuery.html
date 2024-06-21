@@ -1,0 +1,19 @@
+<html>
+  <head>
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <div id="test">Hello world.. Am going to hide this content for you on the click of a button</div><br>
+    <button class="clickme">Press</button>
+   
+    <script>
+      $(document).ready(function(){
+        $(".clickme").click(function(){
+          $('#test').hide();//this is the basic syntax of the jQuery 
+          //$ symbol means that jQuery and inside the parameters we have to put hte html element by its id , class name or any selector and at end the action that we want to take...
+        })
+      });
+    </script>
+  </body>
+</html>

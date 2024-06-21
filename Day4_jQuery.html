@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <center><h1 class="heading">Hello World, welcome to jQuery world</h1></center>
+  <center>
+    <ol type="1" style="list-style-type: none;" id="list-id" >
+      <h2>
+        <li>Hello world..1.!</li>
+        <li>Hello world..2.!</li>
+        <li>Hello world..3.!</li>
+        <li>Hello world..4.!</li>
+        <li>Hello world..5.!</li>
+      </h2>
+    </ol>
+  </center>
+
+  <center>
+    <ol type="1" style="list-style-type: none;">
+      <h2>
+        <li>Hello world..1.!</li>
+        <li>Hello world..2.!</li>
+        <li>Hello world..3.!</li>
+        <li>Hello world..4.!</li>
+        <li>Hello world..5.!</li>
+      </h2>
+    </ol>
+  </center>
+  <button id="btn-id">click it</button>
+
+  <script>
+    $(document).ready(function(){
+      $('#btn-id').click(function(){
+        // $(this).css("color","red");
+        // $('[type]').hide("slow");
+        // here the keyword "this" will refer to the above button only
+        // $('#list-id li:first-child').hide();
+        // $('#list-id li:last-child').hide();
+        $(' li:nth-child(4)').hide();
+      });
+    });
+  </script>
+</body>
+</html>

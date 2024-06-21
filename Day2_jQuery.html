@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <title>Document</title>
+    <script src="jquery-3.7.1.min.js"></script>
+  </head>
+  <body>
+    <h1>Hello World...!!</h1>
+    <p id="check">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Alias ex quae cupiditate molestias repellendus? Ab possimus cumque sequi voluptate soluta saepe, omnis nisi provident nihil praesentium iusto optio esse ratione.</p>
+
+    <p id="check2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos sunt eveniet, minus nisi accusamus repellat soluta velit! Quo odio, quod veritatis doloribus nam nihil harum assumenda culpa odit laboriosam sit dolorum esse consectetur vel minus voluptatibus. Minima atque suscipit in delectus quasi velit pariatur quisquam! Praesentium temporibus corrupti, facere veniam, excepturi odio est iste sint nam quasi rem, corporis quam.</p>
+
+    <p id="check3">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minima quos assumenda maiores at nostrum soluta, asperiores modi architecto reprehenderit animi dolore, impedit iusto quae eius. Neque voluptas, aperiam dolor nihil placeat odio amet consectetur quae perferendis officia facere in cumque labore omnis quaerat explicabo maxime facilis veritatis repudiandae? Illum.</p>
+
+    <input type="text" placeholder="Type Something...." class="check-class">
+    <br>
+    <br>
+    <br>
+    <button id="hide-it"> click me </button>
+
+
+    <script>
+
+      $(document).ready(function(){
+        $("#hide-it").click(function(){
+          $("p:first").hide(); //here we can use our selectors in an unique way in jQuery
+        });
+      });
+    </script>
+  </body>
+</html>

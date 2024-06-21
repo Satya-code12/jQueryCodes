@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <center><h1 id="heading1">Hello World...</h1></center>
+  <center><h4 class="random1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus officia mollitia ratione voluptatem, odit est accusantium ea nobis enim beatae. Laborum ipsum et esse aut, aperiam culpa vero, reiciendis atque consequuntur deleniti quam, autem mollitia blanditiis voluptas illo at facilis</h4></center>
+  <br><br><br>
+  <center><h1 id="heading2">Hello jQuery..!</h1></center>
+  <center><h4 class="random2">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Suscipit et magni corrupti neque? Nulla earum corrupti quos inventore mollitia, illum animi suscipit voluptatibus, ea nisi quae quo sequi ad ex cumque nesciunt dolorum, expedita amet fuga. Numquam non, distinctio temporibus fugiat voluptas atque rerum assumenda voluptatibus eum molestiae minima voluptates!</h4></center>
+
+  <button id="btn-id">Click/Apply</button>
+  
+  
+  <script>
+    $(document).ready(function(){
+      $('#btn-id').click(function(){ //this is single click event...
+        $('#heading1, .random1').css({
+          "color": "red",
+          "backgroundColor": "cyan"
+        });
+      });
+
+      $('#btn-id').dblclick(function(){ //this is double click event...
+        $('#heading2, .random2').css({
+          "color": "cyan",
+          "backgroundColor": "black"
+        });
+      });
+    });  
+  </script>
+</body>
+</html>

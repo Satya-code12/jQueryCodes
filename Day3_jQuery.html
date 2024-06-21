@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Document</title>
+  <script src="jquery-3.7.1.min.js"></script>
+</head>
+<body>
+  <center><H1>Hello Everyone, this is my third day in jQuery journey...</H1></center>
+  <center><h3><a href="#" id="anchor-id">My instagram handle</a></h3></center><br>
+  <center><button class="button-class">:)</button></center>
+
+
+  <script>
+    $(document).ready(function(){
+      $('.button-class').click(function(){
+        $('#anchor-id').css('textDecoration', 'none');
+      });
+    }); //this syntax is used for the single line css code
+
+    // $(document).ready(function(){
+    //   $('.button-class').click(function(){
+    //     $('#anchor-id').css({
+    //       "textDecoration" : "none",
+    //       "backgroundColor" : "cyan",
+    //       "fontSize" : "larger",
+    //       "color" : "black"
+    //     });
+    //   });
+    // }); // this is used for the multi line css code
+  </script>
+</body>
+</html>
